@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1604057920 source:d:\cse\c\gokul - mini project\health_tracker\main.c
+	<stdio.h>
+	<stdlib.h>
+	<limits.h>
+	<string.h>
+
