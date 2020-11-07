@@ -1,6 +1,9 @@
 # Health-Tracker
 
-A simple application built to help you keep track of your medical records and perscriptions. 
+<p align="center">
+    <img src="assets/Logo.PNG" alt="Logo" border="0">
+    <br>An application built to help you keep track of your medical records and perscriptions. 
+</p>
 
 ## Motivation
 
@@ -16,4 +19,4 @@ Also, thanks for contributing to Open-source!
 
 ## License 
 
-Health-Tracker is under The MIT License. Read the [LICENSE](https://github.com/SVijayB/Health-Tracker/blob/master/LICENSE) file for more information.
+Health-Tracker is under The MIT License. Read the [LICENSE](https://github.com/SVijayB/Health-Tracker/blob/master/LICENSE) file for more information.   
