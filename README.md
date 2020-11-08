@@ -1,7 +1,7 @@
 # Health-Tracker
 
 <p align="center">
-    <img src="assets/Logo.PNG" alt="Logo" border="0">
+    <img src="assets/Logo.PNG" alt="Logo" border="0" width="500px">
     <br>An application built to help you keep track of your medical records and perscriptions. 
 </p>
 
