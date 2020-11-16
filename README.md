@@ -1,4 +1,4 @@
-# Health-Tracker
+# Health Tracker
 
 <p align="center">
     <img src="assets/Logo.PNG" alt="Logo" border="0" width="500px">
