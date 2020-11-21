@@ -1,1 +1,3 @@
 .vscode
+src\__pycache__
+src\Modules\__pycache__
