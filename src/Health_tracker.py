@@ -3,7 +3,7 @@ import sys
 import sqlite3
 from getpass import getpass
 from Modules.Colours import *
-from Modules.Functions import *
+from Modules.Account_functions import *
 
 if __name__ == "__main__":
 
