@@ -12,7 +12,7 @@ def login(username):
     output = "".join(logo.readlines())
     print(output)
 
-    conn = sqlite3.connect('assets/Database.db')
+    conn = sqlite3.connect('../assets/Database.db')
     cursor = conn.cursor()
 
     try:

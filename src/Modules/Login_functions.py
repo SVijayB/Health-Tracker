@@ -1,6 +1,6 @@
 from Modules.Login import *
 
-conn = sqlite3.connect('assets/Database.db')
+conn = sqlite3.connect('../assets/Database.db')
 cursor = conn.cursor()
 
 def add_medications(username, name, quantity, time):

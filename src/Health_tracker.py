@@ -8,7 +8,7 @@ from Modules.Login import login
 
 if __name__ == "__main__":
 
-    conn = sqlite3.connect('assets/Database.db')
+    conn = sqlite3.connect('../assets/Database.db')
     cursor = conn.cursor()
 
     try:
@@ -19,7 +19,7 @@ if __name__ == "__main__":
         pass
 
     os.system('cls')
-    logo = open("assets/logo.txt","r")
+    logo = open("../assets/logo.txt","r")
     output = "".join(logo.readlines())
     print(output)
 

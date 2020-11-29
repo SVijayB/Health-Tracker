@@ -1,7 +1,7 @@
 from Health_tracker import *
 from Modules.Colours import *
 
-conn = sqlite3.connect('assets/Database.db')
+conn = sqlite3.connect('../assets/Database.db')
 cursor = conn.cursor()
 
 def get_password(username):

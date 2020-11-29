@@ -47,5 +47,5 @@ def scheduler(username):
 def reminder():
     print("Time to take your meds")
     mixer.init()
-    mixer.music.load('assets/ringtone.mp3')
+    mixer.music.load('../assets/ringtone.mp3')
     mixer.music.play()
