@@ -1,7 +1,9 @@
 import os
 import sqlite3
+import sys
 from Modules.Colours import *
 from Modules.Login_functions import *
+import time
 
 def login(username):
     os.system('cls')
@@ -27,8 +29,7 @@ def login(username):
         print("""What would you like to do?
         1) Add perscriptions
         2) Delete perscriptions
-        3) Set reminders for appointments
-        4) Exit""")
+        3) Exit""")
         choice = int(input("> "))
         cyan("-" * 15)
 
@@ -37,7 +38,7 @@ def login(username):
             quantity = input("How many pills do you take at once? \n> ").capitalize()
             temp = 0
             print("""Time at which you are prescribed to take medications?
-        (Type in the numbers and hit enter. Once done, enter 5)
+    (Type in the numbers and hit enter. Once done, enter 5)
             1) Morning
             2) Afternoon
             3) Night
@@ -75,14 +76,9 @@ def login(username):
                 print("Medicine entered does not exist. Recheck the name entered")
 
         elif(choice == 3):
-            schedule()
-
-        elif(choice == 4):
-            green("\n-----x Thanks for using Health tracker x-----")
-            grey("Press enter to exit...")
-            input()
-            conn.close()
             break
 
         else:
             red("\nERROR : Invalid choice\n")
+
+    scheduler()
