@@ -8,7 +8,7 @@ from Modules.Scheduler import *
 def login(username):
     os.system('cls')
 
-    logo = open("assets/logo.txt","r")
+    logo = open("../assets/logo.txt","r")
     output = "".join(logo.readlines())
     print(output)
 
