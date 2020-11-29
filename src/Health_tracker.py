@@ -4,6 +4,7 @@ import sqlite3
 from getpass import getpass
 from Modules.Colours import *
 from Modules.Account_functions import *
+from Modules.Login import login
 
 if __name__ == "__main__":
 
@@ -39,6 +40,7 @@ if __name__ == "__main__":
             password = getpass("Enter password \n> ")
             if(get_password(username)==password):
                 green("Logged in successfully")
+                login(username)
             else:
                 red("Your password does not seem to match...")
         else:
