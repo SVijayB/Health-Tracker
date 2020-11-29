@@ -22,3 +22,10 @@ def delete_medications(username, name):
     conn.execute(command)
     conn.commit()
     green("\n" + name + " details have been deleted from the database successfully.\n")
+
+def display(username):
+    command = ('SELECT NAME,QUANTITY,TIME from {}'.format(username))
+    cursor.execute(command)
+    data = cursor.fetchall()
+    for name,quantity,time in data:
+        print("Name : " + name + " | Quantity : " + quantity + " | Time : " + time)

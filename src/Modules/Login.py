@@ -3,7 +3,7 @@ import sqlite3
 import sys
 from Modules.Colours import *
 from Modules.Login_functions import *
-import time
+from Modules.Scheduler import *
 
 def login(username):
     os.system('cls')
@@ -29,7 +29,8 @@ def login(username):
         print("""What would you like to do?
         1) Add perscriptions
         2) Delete perscriptions
-        3) Exit""")
+        3) Display perscriptions
+        4) Exit""")
         choice = int(input("> "))
         cyan("-" * 15)
 
@@ -76,9 +77,12 @@ def login(username):
                 print("Medicine entered does not exist. Recheck the name entered")
 
         elif(choice == 3):
+            display(username)
+
+        elif(choice == 4):
             break
 
         else:
             red("\nERROR : Invalid choice\n")
-
-    scheduler()
+    
+    scheduler(username)
