@@ -67,9 +67,22 @@ def login(username):
             
             add_medications(username, medication, quantity, time)
 
-        if(choice == 2):
+        elif(choice == 2):
             medication = input("Enter the name of the medicine you want to remove\n> ").capitalize()
             if(check_medications(username, medication)):
                 delete_medications(username, medication)
             else:
                 print("Medicine entered does not exist. Recheck the name entered")
+
+        elif(choice == 3):
+            schedule()
+
+        elif(choice == 4):
+            green("\n-----x Thanks for using Health tracker x-----")
+            grey("Press enter to exit...")
+            input()
+            conn.close()
+            break
+
+        else:
+            red("\nERROR : Invalid choice\n")
