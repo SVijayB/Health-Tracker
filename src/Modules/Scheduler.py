@@ -1,4 +1,3 @@
-import schedule
 import time
 from pygame import mixer
 from Modules.Login import *
