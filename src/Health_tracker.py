@@ -33,7 +33,7 @@ if __name__ == "__main__":
     cyan("-" * 15)
 
     if(choice==1):
-        username = input("Enter your Username \n> ")
+        username = input("Enter your Username \n> ").capitalize()
         flag = check_details(username)
         if flag:
             password = getpass("Enter password \n> ")
@@ -45,10 +45,7 @@ if __name__ == "__main__":
             red("Incorrect username")
 
     elif(choice==2):
-        username = input("Enter your new Username \n> ")
-        cursor.execute("SELECT USERNAME from DETAILS where USERNAME = ?", (username,))
-        data = cursor.fetchall()
-        username = username.capitalize()
+        username = input("Enter your new Username \n> ").capitalize()
         flag = check_details(username)
         if flag:
             red("\nUsername {} already exists.\n".format(username))
