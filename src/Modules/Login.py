@@ -13,12 +13,13 @@ def login(username):
     cursor = conn.cursor()
 
     try:
-        conn.execute('''CREATE TABLE {} 
-            (NAME TEXT NOT NULL, 
-            QUANTITY TEXT NOT NULL
-            TIME TEXT NOT NULL)''').format(username)
+        command = ('''CREATE TABLE IF NOT EXISTS {} 
+        (NAME TEXT NOT NULL, 
+        QUANTITY TEXT NOT NULL,
+        TIME TEXT NOT NULL)''').format(username)
+        conn.execute(command)
     except:
-        print("error")
+        pass
 
     cyan("-" * 15)
     print("""What would you like to do?
