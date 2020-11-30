@@ -45,6 +45,7 @@ if __name__ == "__main__":
                 red("Your password does not seem to match...")
         else:
             red("Incorrect username")
+            input()
 
     elif(choice==2):
         username = input("Enter your new Username \n> ").capitalize()
@@ -54,7 +55,8 @@ if __name__ == "__main__":
         else:
             password = getpass("Enter password \n> ")
             add_account(username, password)
-            green("\n" + username + " account has been successfully created\n")
+            green("\n" + username + " account has been successfully created")
+            input()
         
     elif (choice == 3):
         username = input("Enter the username for which you want to update the password for \n> ").capitalize()
