@@ -11,6 +11,28 @@ Tracking Medication should not be a difficult task, however, it can become extre
 
 The main motto to take up this problem is to cater to each and every need of the patient as well as monitor his/her health from the time he/she first visits the hospital till he/she totally recovers.
 
+## Installation
+
+**Prerequisites** : Python 3 and Pygame module.
+
+For the latest stable version, head to [Releases](https://github.com/SVijayB/Health-Tracker/releases).
+
+Download and extract the source code.
+
+As an alternative, you could also clone the repository using,
+
+<pre>
+git clone https://github.com/SVijayB/Health-Tracker.git
+</pre>
+
+Before running the application, you need to install the [Pygame](https://pypi.org/project/pygame/) module. To do so, launch your terminal and type `pip install pygame`. Once completed, you are ready to use the application.
+
+You can also `cd` to the Health-Tracker directory on your terminal and type 
+
+<pre>
+pip install -r requirements.txt
+</pre>
+
 ## Contributing 
 
 To contribute to Health-Tracker, fork the repository, create a new branch and send us a pull request. Make sure you read [CONTRIBUTING.md](https://github.com/SVijayB/Health-Tracker/blob/master/.github/CONTRIBUTING.md) before sending us Pull requests. 
