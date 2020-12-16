@@ -7,7 +7,7 @@
 
 ## Motivation
 
-Tracking Medication should not be a difficult task, however, it can become extremely difficult ifone is suffering from a chronic condition or if one is trying to figure out what health modalitiescan help improve performance. Using a Medicine Tracker app can greatly improve youradherence.
+Tracking Medication should not be a difficult task, however, it can become extremely difficult if one is suffering from a chronic condition or if one is trying to figure out what health modalities can help improve performance. Using a Medicine Tracker app can greatly improve your adherence.
 
 The main motto to take up this problem is to cater to each and every need of the patient as well as monitor his/her health from the time he/she first visits the hospital till he/she totally recovers.
 
