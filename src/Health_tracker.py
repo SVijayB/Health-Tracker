@@ -43,15 +43,23 @@ if __name__ == "__main__":
                 login(username)
             else:
                 red("Your password does not seem to match...")
+                grey("Press enter key to exit...")
+                input()
+                sys.exit(0)
         else:
             red("Incorrect username")
+            grey("Press enter key to exit...")
             input()
+            sys.exit(0)
 
     elif(choice==2):
         username = input("Enter your new Username \n> ").capitalize()
         flag = check_details(username)
         if flag:
             red("\nUsername {} already exists.\n".format(username))
+            grey("Press enter key to exit...")
+            input()
+            sys.exit(0)
         else:
             password = getpass("Enter password \n> ")
             add_account(username, password)
@@ -68,8 +76,14 @@ if __name__ == "__main__":
                 update_password(username, new_password)
             else:
                 red("Your password does not seem to match...")
+                grey("Press enter key to exit...")
+                input()
+                sys.exit(0)
         else:
             red("\nThere are no details for %s" % username + "\n")
+            grey("Press enter key to exit...")
+            input()
+            sys.exit(0)
 
     elif (choice == 4):
         username = input("Enter the username for the account you want to delete \n> ").capitalize()
@@ -80,8 +94,14 @@ if __name__ == "__main__":
                 delete_account(username)
             else:
                 red("Your password does not seem to match...")
+                grey("Press enter key to exit...")
+                input()
+                sys.exit(0)
         else:
             red("\nThere are no details for %s" % username + "\n")
+            grey("Press enter key to exit...")
+            input()
+            sys.exit(0)
 
     elif(choice == 5):
         green("\n-----x Thanks for using Health tracker x-----")
@@ -91,3 +111,6 @@ if __name__ == "__main__":
 
     else:
         red("\nERROR : Invalid choice\n")
+        grey("Press enter key to exit...")
+        input()
+        sys.exit(0)
