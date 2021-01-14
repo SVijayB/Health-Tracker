@@ -33,6 +33,16 @@ You can also `cd` to the Health-Tracker directory on your terminal and type
 pip install -r requirements.txt
 </pre>
 
+## Usage
+
+Once you have all the files on your local system, you can launch it by double tapping the `Health_tracker.py` file present in the **`src`** folder. You can do this only if you have the *python launcher* installed.
+
+Else, `cd/` to the src folder on your terminal and type `python Health_tracker.py`.
+
+Now, create an account and login.
+
+**Note** : Leave the program running in order to recieve reminders at the right time.
+
 ## Contributing 
 
 To contribute to Health-Tracker, fork the repository, create a new branch and send us a pull request. Make sure you read [CONTRIBUTING.md](https://github.com/SVijayB/Health-Tracker/blob/master/.github/CONTRIBUTING.md) before sending us Pull requests. 
