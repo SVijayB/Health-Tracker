@@ -45,6 +45,7 @@ def login(username):
             3) Night
             4) Exit""")
             time = ""
+
             while (temp!=4):
                 temp = int(input("> "))
                 if(temp == 1):
@@ -74,7 +75,7 @@ def login(username):
             if(check_medications(username, medication)):
                 delete_medications(username, medication)
             else:
-                print("Medicine entered does not exist. Recheck the name entered")
+                red("Medicine entered does not exist. Recheck the name entered")
 
         elif(choice == 3):
             display(username)
@@ -83,6 +84,6 @@ def login(username):
             break
 
         else:
-            red("\nERROR : Invalid choice\n")
+            red("\nERROR : Invalid choice. Select between 1-4 only.\n")
     
     scheduler(username)
