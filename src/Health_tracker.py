@@ -64,7 +64,9 @@ if __name__ == "__main__":
             password = getpass("Enter password \n> ")
             add_account(username, password)
             green("\n" + username + " account has been successfully created")
+            grey("Press enter key to exit...")
             input()
+            sys.exit(0)
         
     elif (choice == 3):
         username = input("Enter the username for which you want to update the password for \n> ").capitalize()
