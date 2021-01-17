@@ -5,6 +5,19 @@
     <br>An application built to help you keep track of your medical records and perscriptions. 
 </p>
 
+---
+
+[![GitHub pull-requests](https://img.shields.io/github/issues-pr/SVijayB/Health-Tracker.svg)](https://github.com/SVijayB/Health-Tracker/pulls)
+[![GitHub issues](https://img.shields.io/github/issues/SVijayB/Health-Tracker.svg)](https://github.com/SVijayB/Health-Tracker/issues)
+[![GitHub contributors](https://img.shields.io/github/contributors/SVijayB/Health-Tracker.svg)](https://github.com/SVijayB/Health-Tracker/graphs/contributors)
+
+[![GitHub license](https://img.shields.io/github/license/SVijayB/Health-Tracker.svg)](https://github.com/SVijayB/Health-Tracker/blob/master/LICENSE)
+[![GitHub release](https://img.shields.io/github/release/SVijayB/Health-Tracker.svg)](https://github.com/SVijayB/Health-Tracker/releases)
+[![GitHub repo size](https://img.shields.io/github/repo-size/svijayb/Health-Tracker)](https://github.com/SVijayB/Health-Tracker)
+
+[![Code of Conduct](https://img.shields.io/badge/code%20of-conduct-ff69b4.svg?style=flat)](https://github.com/SVijayB/Health-Tracker/blob/master/.github/CODE_OF_CONDUCT.md)
+[![Open Source Love svg1](https://img.shields.io/static/v1?label=Open&message=Source%20%E2%9D%A4%EF%B8%8F&color=blueviolet)](https://github.com/SVijayB/Health-Tracker/blob/master/.github/CONTRIBUTING.md)
+
 ## Motivation
 
 Tracking Medication should not be a difficult task, however, it can become extremely difficult if one is suffering from a chronic condition or if one is trying to figure out what health modalities can help improve performance. Using a Medicine Tracker app can greatly improve your adherence.
