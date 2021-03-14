@@ -8,37 +8,41 @@ from Modules.Login import login
 
 if __name__ == "__main__":
 
-    conn = sqlite3.connect('../assets/Database.db')
+    conn = sqlite3.connect("../assets/Database.db")
     cursor = conn.cursor()
 
     try:
-        conn.execute('''CREATE TABLE DETAILS 
+        conn.execute(
+            """CREATE TABLE DETAILS 
             (USERNAME TEXT NOT NULL, 
-            PASSWORD TEXT NOT NULL)''')
+            PASSWORD TEXT NOT NULL)"""
+        )
     except:
         pass
 
-    os.system('cls')
-    logo = open("../assets/logo.txt","r")
+    os.system("cls")
+    logo = open("../assets/logo.txt", "r")
     output = "".join(logo.readlines())
     print(output)
 
     cyan("-" * 15)
-    print("""What would you like to do?
+    print(
+        """What would you like to do?
     1) Login
     2) Add an account
     3) Update Password
     4) Delete an account
-    5) Exit""")
+    5) Exit"""
+    )
     choice = int(input("> "))
     cyan("-" * 15)
 
-    if(choice==1):
+    if choice == 1:
         username = input("Enter your Username \n> ").capitalize()
         flag = check_details(username)
         if flag:
             password = getpass("Enter password \n> ")
-            if(get_password(username)==password):
+            if get_password(username) == password:
                 green("Logged in successfully")
                 login(username)
             else:
@@ -52,7 +56,7 @@ if __name__ == "__main__":
             input()
             sys.exit(0)
 
-    elif(choice==2):
+    elif choice == 2:
         username = input("Enter your new Username \n> ").capitalize()
         flag = check_details(username)
         if flag:
@@ -67,13 +71,15 @@ if __name__ == "__main__":
             grey("Press enter key to exit...")
             input()
             sys.exit(0)
-        
-    elif (choice == 3):
-        username = input("Enter the username for which you want to update the password for \n> ").capitalize()
+
+    elif choice == 3:
+        username = input(
+            "Enter the username for which you want to update the password for \n> "
+        ).capitalize()
         flag = check_details(username)
         if flag:
             old_password = getpass("Enter old password :\n> ")
-            if(get_password(username)==old_password):
+            if get_password(username) == old_password:
                 new_password = getpass("Enter new password :\n> ")
                 update_password(username, new_password)
             else:
@@ -87,12 +93,14 @@ if __name__ == "__main__":
             input()
             sys.exit(0)
 
-    elif (choice == 4):
-        username = input("Enter the username for the account you want to delete \n> ").capitalize()
+    elif choice == 4:
+        username = input(
+            "Enter the username for the account you want to delete \n> "
+        ).capitalize()
         flag = check_details(username)
         if flag:
             old_password = getpass("Enter password :\n> ")
-            if(get_password(username)==old_password):
+            if get_password(username) == old_password:
                 delete_account(username)
             else:
                 red("Your password does not seem to match...")
@@ -105,7 +113,7 @@ if __name__ == "__main__":
             input()
             sys.exit(0)
 
-    elif(choice == 5):
+    elif choice == 5:
         green("\n-----x Thanks for using Health tracker x-----")
         grey("Press enter to exit...")
         input()
